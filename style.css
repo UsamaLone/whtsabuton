@@ -1,0 +1,35 @@
+/* Page background pure black */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button style */
+#whatsappBtn {
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #111;        /* dark black button */
+  border: 2px solid #550000;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover = glow dark red */
+#whatsappBtn:hover {
+  box-shadow: 0 0 20px #8b0000;
+  border-color: #8b0000;
+}
+
+/* Click = full red */
+#whatsappBtn:active {
+  background: #8b0000;
+  border-color: #8b0000;
+  box-shadow: 0 0 30px #ff0000;
+}
