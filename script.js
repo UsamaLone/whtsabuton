@@ -1,5 +1,5 @@
 const WHATSAPP_NUMBER = "923184830933";
-const DEFAULT_MESSAGE = "Assalamualaikum! Direct message bhej raha/rahi hoon.";
+const DEFAULT_MESSAGE = "Assalamualaikum!";
 
 // Detect mobile user
 const isMobile = /android|iphone|ipad|ipod/i.test(navigator.userAgent);
@@ -17,3 +17,4 @@ btn.addEventListener("click", () => {
   const encodedMsg = encodeURIComponent(DEFAULT_MESSAGE);
   window.location.href = `whatsapp://send?phone=${WHATSAPP_NUMBER}&text=${encodedMsg}`;
 });
+
